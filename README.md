@@ -9,3 +9,6 @@ While READingME, you will find the steps that I followed during the creation til
 ![Billing-service_structure](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/structure_billing.png)
 
 2. Test the APIs using SWAGGER3 (Open API)
+3. Establish the communication between microservices by OpenFeign
+4. Create The spring Cloud Gateway
+5. Create the Eureka Service
