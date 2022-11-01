@@ -9,6 +9,18 @@ While READingME, you will find the steps that I followed during the creation til
 ![Billing-service_structure](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/structure_billing.png)
 
 2. Test the APIs using SWAGGER3 (Open API)
+    As usual, after the creation of the multiple layers of a Spring Application, the next step is to test the connection to the APIs through several tools. In this case, we will use Swagger3 as an Open API Documentation, and try to check if the HTTP methods works on successfully.
+   ![Customer-API](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/swagger_customer.png)
+   ![Billing-API](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/swagger_billing.png)
+   
+Let's test those APIs by executing one of the methods. For the customer API, I will add new customer named "C03". And I will show the invoices for the customers.
+![Customer-testAPI](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/testapi_customer.png)
+![Billing-testAPI](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/testapi_billing.png)
+
+
 3. Establish the communication between microservices by OpenFeign
 4. Create The spring Cloud Gateway
 5. Create the Eureka Service
+6. Containerize microservices using Docker
+Thanks to the containerisation in Docker, we will never struggle with the 4 running instances of IntelliJ projects at the same time. The creation of containers deploying microservices facilitates the use of such a huge architecture. And when we talk about microservices means multiple applications then several containers, so we have to use docker compose in order to configure all the services through its configuration. So, the configuration of the microservices is defined in [docker-compose.yaml](https://github.com/loubnaAminou/MicroServices/blob/main/docker-compose/docker-compose.yaml). And as a result, we have 4 containers for 4 microservices :
+   ![docker-containers](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/docker-containers.png)
