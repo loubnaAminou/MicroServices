@@ -10,8 +10,10 @@ While READingME, you will find the steps that I followed during the creation til
 
 2. Test the APIs using SWAGGER3 (Open API)
     As usual, after the creation of the multiple layers of a Spring Application, the next step is to test the connection to the APIs through several tools. In this case, we will use Swagger3 as an Open API Documentation, and try to check if the HTTP methods works on successfully.
-   ![Customer-API](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/swagger_customer.png)
-   ![Billing-API](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/swagger_billing.png)
+
+![Customer-API](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/swagger_customer.png)
+
+![Billing-API](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/swagger_billing.png)
    
 Let's test those APIs by executing one of the methods. For the customer API, I will add new customer named "C03". And I will show the invoices for the customers.
 ![Customer-testAPI](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/testapi_customer.png)
