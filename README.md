@@ -20,7 +20,13 @@ Let's test those APIs by executing one of the methods. For the customer API, I w
 ![Billing-testAPI](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/testapi_billing.png)
 
 
-3. Establish the communication between microservices by OpenFeign
+3. Create the communication between microservices by OpenFeign
+
+    In this project, we have two microservices communicating with each other. More specifically, the billing service needs more pieces of information from the customer service in order to identify the customer who the bill belongs for him. That's why, we have to use Spring Cloud OpenFeign as a tool to make web services easier. How can we use OpenFeign ? is by creating a REST client interface which we could specify the services that we would to consume.In our case, we will create a REST client interface for the customer service to receive the customers.
+
+![OpenFeignInterface](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/openfeign.png)
+
+
 4. Create The spring Cloud Gateway
 5. Create the Eureka Service
 6. Containerize microservices using Docker
