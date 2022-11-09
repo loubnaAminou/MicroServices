@@ -30,8 +30,11 @@ Let's test those APIs by executing one of the methods. For the customer API, I w
     The gateway in Spring Cloud used as proxy between the users and the microservices. Instead of knowing ho to access to the services, the Spring Cloud Gateway facilitates the access by entering the service name in the URL instead of its address. It's configurable only once for the whole project and used for all the microservices of the project.  
    ![Gateway](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/gateway.png)
 
-
 5. Eureka Service
+    And for Registry Eureka Service, is used in order to hold the information about all client-service applications. a REST based service for locating services for the purpose of load balancing and failover of middle-tier servers.
+   ![Eureka](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/eureka.png)
+
+
 6. Containerize microservices using Docker
 Thanks to the containerisation in Docker, we will never struggle with the 4 running instances of IntelliJ projects at the same time. The creation of containers deploying microservices facilitates the use of such a huge architecture. And when we talk about microservices means multiple applications then several containers, so we have to use docker compose in order to configure all the services through its configuration. So, the configuration of the microservices is defined in [docker-compose.yaml](https://github.com/loubnaAminou/MicroServices/blob/main/docker-compose/docker-compose.yaml). And as a result, we have 4 containers for 4 microservices :
    ![docker-containers](https://github.com/loubnaAminou/MicroServices/blob/main/imgs/docker-containers.png)
